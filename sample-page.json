@@ -3,8 +3,8 @@
     "shortDescription": "string",
     "companyStarter": "string",
     "howMuch": "string",
-    "backers": "number",
+    "backers": 1,
     "timeRemaining": "number",
-    "projectImage": "string"
+    "projectImage": 1
   }]
 }
