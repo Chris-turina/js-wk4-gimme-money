@@ -1,0 +1,10 @@
+{ "project": [{
+    "title": "string",
+    "shortDescription": "string",
+    "companyStarter": "string",
+    "howMuch": "string",
+    "backers": "number",
+    "timeRemaining": "number",
+    "projectImage": "string"
+  }]
+}
