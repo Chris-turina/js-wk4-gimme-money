@@ -1,3 +1,8 @@
-<h3>{{(projectToDisplay | async).title}}</h3>
+<h3>{{(projectToDisplay | async)?.title}}</h3>
 <p>Christmas</p>
-<h3>{{(projectToDisplay | async).backers}}</h3>
+<p>{{(projectToDisplay | async)?.companyStarter}}</p>
+<p>{{(projectToDisplay | async)?.howMuch}}</p>
+<img src="{{(projectToDisplay | async)?.projectImage}}" alt="Picture NOT WORKING">
+<img src="http://www.gccoe.com/eductraining/assets/images/courses/project.jpg" alt="">
+<p>{{(projectToDisplay | async)?.shortDescription}}</p>
+<p>{{(projectToDisplay | async)?.timeRemaining}}</p>

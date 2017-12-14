@@ -10,13 +10,12 @@ export class ProjectService {
   this.projects = database.list('project') }
 
   getProjects() {
-    console.log(this.projects);
     return this.projects;
   }
 
-  // addProject(newProject: Project) {
-  //   this.projects.push(newProject);
-  // }
+  addProject(newProject: Project) {
+    this.projects.push(newProject);
+  }
 
   getProjectById(projectId: string) {
     return this.database.object('project/' + projectId);

@@ -1,0 +1,25 @@
+<form>
+  <label>Enter a Project Title</label>
+  <input #newTitle>
+
+  <label>Enter a short description</label>
+  <input #newShortDescription>
+
+  <label>Enter the name of your company</label>
+  <input #newCompanyStarter>
+
+  <label>Enter how much money you are trying to raise</label>
+  <input #newHowMuch>
+
+  <label>Enter the number of starting backers you have</label>
+  <input #newBackers>
+
+  <label>Enter the amount of time you wish to run this project</label>
+  <input #newTimeRemaining>
+
+  <label>Enter a project image URL</label>
+  <input #newProjectImage>
+
+  <button (click)="submitForm(newTitle.value, newShortDescription.value, newCompanyStarter.value, newCompanyStarter.value, newHowMuch.value, newBackers.value, newTimeRemaining.value, newProjectImage.value); newTitle.value=''; newShortDescription.value=''; newCompanyStarter.value=''; newCompanyStarter.value=''; newHowMuch.value=''; newBackers.value=''; newTimeRemaining.value=''; newProjectImage.value='';addButtonClicked()">Add your project</button>
+
+</form>

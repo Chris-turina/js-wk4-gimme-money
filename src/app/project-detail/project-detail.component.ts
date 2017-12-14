@@ -25,13 +25,8 @@ export class ProjectDetailComponent implements OnInit {
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
       this.projectId = urlParameters['id'];
-      console.log(this.projectToDisplay)
     });
-    console.log(this.projectToDisplay)
-
     this.projectToDisplay = this.projectService.getProjectById(this.projectId);
-    console.log(this.projectToDisplay.title)
-
   }
 
 }

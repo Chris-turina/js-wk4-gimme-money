@@ -17,12 +17,10 @@ export class List1Component implements OnInit {
 
   goToDetailPage(clickedProject) {
     this.router.navigate(['project', clickedProject.$key]);
-    console.log('project', clickedProject.$key);
   }
 
   ngOnInit() {
     this.projects = this.projectService.getProjects();
-    console.log(this.projects);
   }
 
 }
