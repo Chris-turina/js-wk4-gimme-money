@@ -1,0 +1,24 @@
+<h4>Edit Project</h4>
+
+<label>Edit a Project Title</label>
+<input [(ngModel)]="selectedProject.title">
+
+<label>Edit a short description</label>
+<input [(ngModel)]="selectedProject.shortDescription">
+
+<label>Edit the name of your company</label>
+<input [(ngModel)]="selectedProject.companyStarter">
+
+<label>Edit how much money you are trying to raise</label>
+<input [(ngModel)]="selectedProject.howMuch">
+
+<label>Edit the number of starting backers you have</label>
+<input [(ngModel)]="selectedProject.backers">
+
+<label>Edit the amount of time you wish to run this project</label>
+<input [(ngModel)]="selectedProject.timeRemaining">
+
+<label>Edit a project image URL</label>
+<input [(ngModel)]="selectedProject.projectImage">
+
+<button (click)="beginUpdatingProject(selectedProject)">Update</button>
